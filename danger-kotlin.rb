@@ -8,9 +8,9 @@ class DangerKotlin < Formula
 
   # Use the vendored danger
   depends_on "danger/tap/danger-js"
-  depends_on "kotlin" => "1.4.31"
+  depends_on "kotlin" => ["1.4.31"]
   depends_on "maven"
-  depends_on "gradle" => "5.6.2"
+  depends_on "gradle" => ["5.6.2"]
 
   def install
     system "make", "install", "PREFIX=#{prefix}"
